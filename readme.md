@@ -58,13 +58,13 @@ API_ENDPOINT="http://omg-api.com.production" browserify -t localenvify index.js
 
 You can pass transform options to localenvify to load custom .env files.
 
-### Command line
+On the command line:
 
 ```shell
 browserify -t [ localenvify --envfile .env.test  ] index.js 
 ```
 
-### Package.json
+In your package.json:
 
 ```json
 {
@@ -78,6 +78,6 @@ browserify -t [ localenvify --envfile .env.test  ] index.js
 
 ## .env files
 
-As localenvify uses [defunctzombie/localenv](https://github.com/defunctzombie/localenv), if you have a [.env file](https://github.com/defunctzombie/localenv#env-files) in the directory where browserify ran, it will be used.
+.env file format is described in [defunctzombie/localenv readme](https://github.com/defunctzombie/localenv#env-files).
 
 You should use .env files for developer or test environments, not for production* environments.
