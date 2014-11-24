@@ -1,6 +1,6 @@
 {
   "name": "localenvify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "defunctzombie/localenv and hughsk/envify combined as a browserify transform",
   "main": "index.js",
   "repository": {
