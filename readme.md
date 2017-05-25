@@ -54,7 +54,7 @@ API_ENDPOINT="http://omg-api.com.production" browserify -t localenvify index.js
 
 ## Specifying a custom env file
 
-[defunctzombie/localenv](https://github.com/defunctzombie/localenv) only loads .env files when `NODE_PRODUCTION !== 'production'`.
+[defunctzombie/localenv](https://github.com/defunctzombie/localenv) only loads .env files when `NODE_ENV !== 'production'`.
 
 You can pass transform options to localenvify to load custom .env files.
 
